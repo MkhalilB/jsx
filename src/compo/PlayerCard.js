@@ -1,23 +1,35 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-const PlayerCard=({el,key})=>{
-    return(
-        
-            <div>
-                   <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+import PropTypes from 'prop-types';
+const PlayerCard=({el})=>{
+  return(
+      <Card style={{ width: '18rem' }}>
+      <Card.Img style={{width :'280px' ,height:'290px'}} variant="top" src={el.URL} />
       <Card.Body>
         <Card.Title>{el.name}</Card.Title>
         <Card.Text>
           {el.age}
-          {el.jursyNumber}
         </Card.Text>
-        
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
     </Card>
-            </div>
-        
-    )
+  )
 }
+PlayerCard.defaultProps={
+  el :    {
+      name : "Amine",
+      team : "Kef",
+      nationality : "Tunisienne",
+      jerseyNumber : 9,
+      age : 20,
+      URL : "https://gomycodelearndev.blob.core.windows.net/profiles/98bdcd2b-5fe5-4d5e-92a0-dfdaccb351eb-133407944633564858.png"
+      
+
+  }
+}
+
+PlayerCard.propTypes = {
+   el: PropTypes.object
+}
+
 export default PlayerCard

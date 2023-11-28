@@ -5,7 +5,7 @@ var players =[
     nasionality : "Tun",
     jersyNumber : 23,
     age : 21,
-    URL :"/dali.png"
+    URL :"https://upload.wikimedia.org/wikipedia/commons/4/4a/Sadio_Man%C3%A9_Senegal.jpg"
 },
 {
     name : "fourat",
@@ -13,7 +13,7 @@ var players =[
     nasionality : "Tun",
     jersyNumber : 19,
     age : 19,
-    URL :"/Lfoo.png"
+    URL :"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Mohamed_Salah_Ghaly.jpg/300px-Mohamed_Salah_Ghaly.jpg"
 },
 {
     name : "haboob",
@@ -21,7 +21,7 @@ var players =[
     nasionality : "Tun",
     jersyNumber : 7,
     age : 26,
-    URL :"/haboob.png"
+    URL :"https://upload.wikimedia.org/wikipedia/commons/b/bb/Riyad_Mahrez_-_2014_World_Cup.jpg"
 }
 ]
 export default players;
